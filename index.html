@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Graphics Designer Portfolio</title>
+
+  <!-- SDKs & Tailwind -->
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional view transition rule preserved from original -->
+  <style>@view-transition { navigation: auto; }</style>
+</head>
+<body class="min-h-full bg-gray-50">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="text-2xl font-bold text-gradient" id="nav-name">Ahnaf Audry</div>
+
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-purple-600 transition-colors">Home</a>
+          <a href="#portfolio" class="text-gray-700 hover:text-purple-600 transition-colors">Portfolio</a>
+          <a href="#about" class="text-gray-700 hover:text-purple-600 transition-colors">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+        </div>
+
+        <button class="md:hidden p-2" aria-label="Open menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-[80vh] gradient-bg flex items-center justify-center text-white relative overflow-hidden pt-24">
+  <div class="absolute inset-0 opacity-10">
+    <div class="floating absolute top-20 left-10 w-20 h-20 bg-white rounded-full"></div>
+    <div class="floating absolute top-40 right-20 w-16 h-16 bg-white rounded-full" style="animation-delay: -1s;"></div>
+    <div class="floating absolute bottom-32 left-1/4 w-12 h-12 bg-white rounded-full" style="animation-delay: -2s;"></div>
+  </div>
+
+  <div class="text-center z-10 px-6 max-w-4xl">
+          <div class="profile-wrapper mb-6">
+        <div class="profile-ring" id="profile-ring">
+          <img src="Cute.jpg" alt="Profile photo" />
+        </div>
+      </div>
+    <h1 class="text-5xl md:text-7xl font-bold mb-6" id="hero-name">Ahnaf Audry</h1>
+    <p class="text-xl md:text-2xl mb-4 opacity-90" id="hero-tagline">Creative Visual Designer</p>
+    <p class="text-lg mb-8 opacity-80 max-w-2xl mx-auto" id="hero-description">
+      Crafting stunning visual experiences that captivate audiences and bring brands to life through innovative design solutions.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+  <a href="#portfolio"
+     class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors text-center">
+    View My Work
+  </a>
+
+  <a href="#contact"
+     class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-colors text-center">
+    Get In Touch
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Featured Work</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">A showcase of my latest projects spanning branding, digital design, and creative campaigns.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Item 1 -->
+        <a href="brand-identity.html"
+           class="card-hover bg-gradient-to-br from-pink-400 to-purple-600 rounded-2xl p-8 text-white">
+
+           <div class="mb-6">
+                       <svg class="w-12 h-12 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                     </div>
+                     <h3 class="text-2xl font-bold mb-3">Brand Identity</h3>
+                     <p class="opacity-90 mb-4">Complete visual identity system for any startup bussiness, including logo, color palette, and brand guidelines.</p>
+                     <div class="text-sm opacity-75">Branding • Logo Design</div>
+</a>
+
+
+        <!-- Item 2 -->
+        <a href="digital-campaign.html" class="card-hover bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl p-8 text-white">
+          <div class="mb-6">
+            <svg class="w-12 h-12 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M21 16V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2zM5 4h14v8l-4-4-4 4-2-2-4 4V4z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Digital Campaign</h3>
+          <p class="opacity-90 mb-4">Multi-platform digital campaign featuring dynamic visuals and interactive elements for maximum crowd engagement.</p>
+          <div class="text-sm opacity-75">Digital • Social Media</div>
+        </a>
+
+        <!-- Item 3 -->
+        <a href="print-design.html" class="card-hover bg-gradient-to-br from-green-400 to-teal-600 rounded-2xl p-8 text-white">
+          <div class="mb-6">
+            <svg class="w-12 h-12 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Print Design</h3>
+          <p class="opacity-90 mb-4">Elegant print materials including brochures, business cards, and packaging design with premium finishes.</p>
+          <div class="text-sm opacity-75">Print • Packaging</div>
+        </a>
+
+        <!-- Item 4 -->
+        <a href="video-editing.html" class="card-hover bg-gradient-to-br from-orange-400 to-red-600 rounded-2xl p-8 text-white">
+          <div class="mb-6">
+            <svg class="w-12 h-12 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Video Editing</h3>
+          <p class="opacity-90 mb-4">Video editing focused on clear storytelling, smooth pacing, and visual impact across digital platforms.</p>
+          <div class="text-sm opacity-75">Video • Photoshop</div>
+        </a>
+
+        <!-- Item 5 -->
+        <a href="event-graphics.html" class="card-hover bg-gradient-to-br from-purple-400 to-pink-600 rounded-2xl p-8 text-white">
+          <div class="mb-6">
+            <svg class="w-12 h-12 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H19V1h-2v1H7V1H5v1H4.5C3.11 2 2 3.11 2 4.5v15C2 20.89 3.11 22 4.5 22h15c1.39 0 2.5-1.11 2.5-2.5v-15C22 3.11 20.89 2 19.5 2z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Event Graphics</h3>
+          <p class="opacity-90 mb-4">Comprehensive visual system for conferences and events including signage, presentations, and promotional materials.</p>
+          <div class="text-sm opacity-75">Events • Signage</div>
+        </a>
+
+        <!-- Item 6 -->
+        <a href="illustration.html" class="card-hover bg-gradient-to-br from-teal-400 to-blue-600 rounded-2xl p-8 text-white">
+          <div class="mb-6">
+            <svg class="w-12 h-12 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Illustration</h3>
+          <p class="opacity-90 mb-4">Custom illustrations and iconography that enhance brand storytelling and create memorable visual experiences.</p>
+          <div class="text-sm opacity-75">Illustration • Icons</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6" id="about-title">About Me</h2>
+          <p class="text-lg text-gray-600 mb-8 leading-relaxed" id="about-text">
+            I'm a passionate visual designer with over 5 years of experience creating compelling brand identities and digital experiences. I’m driven by structure, clarity, and visual impact. For me, design isn’t just about making things look good—it’s about communicating ideas with precision and intent. I focus on creating visuals that feel deliberate, balanced, and meaningful rather than decorative for the sake of it.
+My work spans digital graphics, visual layouts, and brand-oriented design, with a strong emphasis on composition, typography, and color harmony. I approach every project analytically: understanding the purpose first, then shaping visuals that support it. This allows my designs to remain clean, adaptable, and effective across different platforms.
+I’m constantly refining my skills, experimenting with new styles, and pushing for better execution. Whether it’s crafting a strong visual identity or polishing small design details, I value consistency, usability, and aesthetics equally.
+If you’re looking for design that’s intentional, structured, and visually confident, you’re in the right place.
+          </p>
+
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-semibold text-gray-700">Brand Design</span> <span class="text-gray-600">95%</span></div>
+              <div class="bg-gray-200 rounded-full h-2">
+                <div class="skill-bar w-[95%]" data-percent="95"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-semibold text-gray-700">Digital Design</span> <span class="text-gray-600">90%</span></div>
+              <div class="bg-gray-200 rounded-full h-2">
+                <div class="skill-bar w-[90%]" data-percent="90"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-semibold text-gray-700">Video Editing</span> <span class="text-gray-600">85%</span></div>
+              <div class="bg-gray-200 rounded-full h-2">
+                <div class="skill-bar w-[85%]" data-percent="85"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-2"><span class="font-semibold text-gray-700">Illustration</span> <span class="text-gray-600">80%</span></div>
+              <div class="bg-gray-200 rounded-full h-2">
+                <div class="skill-bar w-[80%]" data-percent="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="bg-gradient-to-br from-purple-400 to-pink-600 rounded-3xl p-8 text-white">
+            <div class="text-center">
+              <div class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+
+              <h3 class="text-2xl font-bold mb-4">Let's Create Together</h3>
+              <p class="opacity-90 mb-6">Ready to bring your vision to life? I'd love to hear about your project and explore how we can work together.</p>
+              <a href="start-project.html"
+   class="inline-block bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+  Start a Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Get In Touch</h2>
+      <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">Have a project in mind? Let's discuss how we can bring your ideas to life through exceptional design.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Email</h3>
+          <p class="text-gray-600" id="contact-email">conaudry@gmail.com</p>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Phone</h3>
+          <p class="text-gray-600" id="contact-phone">+880 1910391816</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+  href="https://wa.me/8801910391816"
+  target="_blank"
+  class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all transform hover:scale-105 inline-block"> Send Message</a>
+  <a
+href="audry-resume.pdf"
+download
+class="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-colors inline-block">Download Resume</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <div class="text-2xl font-bold text-gradient mb-2" id="footer-name">Ahnaf Audry</div>
+          <p class="text-gray-400">Creative Visual Designer</p>
+        </div>
+
+        <div class="flex space-x-6">
+
+  <!-- Facebook -->
+  <a href="https://facebook.com/XXX"
+     target="_blank"
+     class="text-gray-400 hover:text-white transition-colors">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.309c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.796.715-1.796 1.763v2.313h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+<a href="https://instagram.com/YOUR_USERNAME"
+   target="_blank"
+   class="text-gray-400 hover:text-white transition-colors">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8"
+       viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+    <path d="M16 11.37a4 4 0 1 1-7.999.001A4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+  </svg>
+</a>
+
+  <!-- YouTube -->
+  <a href="https://youtube.com/XXX"
+     target="_blank"
+     class="text-gray-400 hover:text-white transition-colors">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M23.498 6.186a2.985 2.985 0 0 0-2.1-2.115C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.398.571A2.985 2.985 0 0 0 .502 6.186 31.53 31.53 0 0 0 0 12a31.53 31.53 0 0 0 .502 5.814 2.985 2.985 0 0 0 2.1 2.115C4.47 20.5 12 20.5 12 20.5s7.53 0 9.398-.571a2.985 2.985 0 0 0 2.1-2.115A31.53 31.53 0 0 0 24 12a31.53 31.53 0 0 0-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  </a>
+
+</div>
+
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2024 Ahnaf Audry. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
